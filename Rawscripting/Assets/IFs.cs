@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IfStatements : MonoBehaviour
+public class IFs : MonoBehaviour
 {
 	float coffeeTemperature = 85.0f;
 	float hotLimitTemperature = 70.0f;
