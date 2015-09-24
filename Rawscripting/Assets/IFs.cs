@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class IFs : MonoBehaviour
@@ -6,7 +6,7 @@ public class IFs : MonoBehaviour
 	float coffeeTemperature = 85.0f;
 	float hotLimitTemperature = 70.0f;
 	float coldLimitTemperature = 40.0f;
-	
+	wii
 	
 	void Update ()
 	{
