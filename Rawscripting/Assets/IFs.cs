@@ -3,38 +3,38 @@ using System.Collections;
 
 public class IFs : MonoBehaviour
 {
-	float coffeeTemperature = 85.0f;
-	float hotLimitTemperature = 70.0f;
-	float coldLimitTemperature = 40.0f
+	public float yougetburned = 100.0f;
+	public float tshirt = 85.0f;
+	public float wintercoat = 40.0f;
 	
-	void Update ()
+         void Update ()
 	{
 		if(Input.GetKeyDown(KeyCode.Space))
-			TemperatureTest();
+			HeatTest();
 		
-		coffeeTemperature -= Time.deltaTime * 5f;
+		yougetburned -= Time.deltaTime *5;
 	}
 	
 	
-	void TemperatureTest ()
+		void HeatTest ()
 	{
-		// If the coffee's temperature is greater than the hottest drinking temperature...
-		if(coffeeTemperature > hotLimitTemperature)
+		// If the temperature is greater than the hottest temperature...
+		if(yougetburned > tshirt)
 		{
 			// ... do this.
-			print("Coffee is too hot.");
+			print("it's too hot outside, you will get burned.");
 		}
-		// If it isn't, but the coffee temperature is less than the coldest drinking temperature...
-		else if(coffeeTemperature < coldLimitTemperature)
+		// If it isn't, but the temperature is less than the coldest temperature...
+		else if(yougetburned < wintercoat)
 		{
 			// ... do this.
-			print("Coffee is too cold.");
+			print("you need a winter coat");
 		}
 		// If it is neither of those then...
 		else
 		{
 			// ... do this.
-			print("Coffee is just right.");
+			print("you can wear a t-shirt");
 		}
 	}
 }
