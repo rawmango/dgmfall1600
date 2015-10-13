@@ -6,9 +6,9 @@ public class IFs : MonoBehaviour
 	float coffeeTemperature = 85.0f;
 	float hotLimitTemperature = 70.0f;
 	float coldLimitTemperature = 40.0f;
-	wii
-	
-	void Update ()
+
+void Update ()
+
 	{
 		if(Input.GetKeyDown(KeyCode.Space))
 			TemperatureTest();
@@ -39,4 +39,3 @@ public class IFs : MonoBehaviour
 		}
 	}
 }
-
