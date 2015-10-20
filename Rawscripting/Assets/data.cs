@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class data : MonoBehaviour {
+public class data : MonoBehaviour 
+   
+
+{
 	void Start () 
 		{
 			//Value type variable

@@ -3,28 +3,20 @@ using System.Collections;
 
 public class IFs : MonoBehaviour
 {
-<<<<<<< HEAD
-	float coffeeTemperature = 85.0f;
-	float hotLimitTemperature = 70.0f;
-	float coldLimitTemperature = 40.0f;
-
-void Update ()
-
-=======
+		
 	public float yougetburned = 100.0f;
 	public float tshirt = 85.0f;
 	public float wintercoat = 40.0f;
-	
-         void Update ()
->>>>>>> IFs
-	{
+
+
+	void Update ()
+		{
 		if(Input.GetKeyDown(KeyCode.Space))
-			HeatTest();
+			 HeatTest();
 		
 		yougetburned -= Time.deltaTime *5;
-	}
-	
-	
+	    }
+
 		void HeatTest ()
 	{
 		// If the temperature is greater than the hottest temperature...
