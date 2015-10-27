@@ -2,12 +2,11 @@
 using System.Collections;
 
 public class arrays : MonoBehaviour 
-{
-	public GameObject[] agents;
+{public GameObject[]agents;
 	
 	void Start ()
 	{ 
-		agents = GameObject.FindGameObjectWithTag("Agent");
+	 agents = GameObject.FindGameObjectWithTag("Agent");
 		
 		for(int i = 0; i < agents.Length; i++)
 		{
@@ -16,4 +15,3 @@ public class arrays : MonoBehaviour
 		}
 	}
 }
-

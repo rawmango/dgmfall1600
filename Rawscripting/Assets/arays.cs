@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class arays : MonoBehaviour {
+public class arays : MonoBehaviour 
 	{
 		public GameObject[] players;
 		
@@ -15,4 +15,3 @@ public class arays : MonoBehaviour {
 			}
 		}
 	}
-	
