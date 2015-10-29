@@ -6,7 +6,7 @@ public class arrays : MonoBehaviour
 	
 	void Start ()
 	{ 
-	 agents = GameObject.FindGameObjectWithTag("Agent");
+	 agents = GameObject.FindGameObjectsWithTag("Agent");
 		
 		for(int i = 0; i < agents.Length; i++)
 		{

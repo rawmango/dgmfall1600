@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Enum : MonoBehaviour 
 	{
-		enum Direction{Orem =27, Lehi= 11,Payson =3, Provo=19 };void Start () 
+		enum Direction{Orem=27, Lehi =13, Payson =7, Provo=19, };void Start () 
 		{
 			Direction myDirection;
 			
@@ -21,6 +21,7 @@ public class Enum : MonoBehaviour
 			else if(dir == Direction.Provo)
 				dir = Direction.Payson;
 			
-			return dir;     
+			return dir;   
+		debug.log 
 		}
 	}
