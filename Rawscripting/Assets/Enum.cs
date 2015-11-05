@@ -3,15 +3,18 @@ using System.Collections;
 
 public class Enum : MonoBehaviour 
 	{
-		enum Direction{Orem=27, Lehi=13, Payson=7, Provo=19, };void Start () 
-		{
-			Direction myDirection;
-			
-			myDirection = Direction.Orem;
-		}
-		
-		Direction ReverseDirection (Direction dir)
-		{
+		enum Direction{Orem=27, Lehi=13, Payson=7, Provo=19, };
+	
+	void Start () 
+	{
+		Direction myDirection = ReverseDirection (Direction.Orem);//(Direction.Payson);
+	
+		Debug.Log (myDirection);
+	}
+	
+	Direction ReverseDirection (Direction dir)
+	{
+
 		if (dir == Direction.Orem)
 			dir = Direction.Lehi;
 		else if (dir == Direction.Lehi)
@@ -21,14 +24,13 @@ public class Enum : MonoBehaviour
 		else if (dir == Direction.Provo)
 			dir = Direction.Payson;
 
-		//return dir
 
+		return (dir);
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-
-			Debug.Log("Direction" );
-			
-	 }
+	void Update ()
+	{
+		//Debug.Log ("my direction is" + Direction);
+	}
 }
+

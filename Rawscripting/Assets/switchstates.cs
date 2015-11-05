@@ -1,46 +1,37 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class switchstates : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
+public class switchstates : MonoBehaviour 
+{
+	public int ciaintel = 5;
+		
+		
+	void Greet()
 	{
-		public int iceintel = 5;
-		
-		
-		void Greet()
+		switch (ciaintel) 
 		{
-			switch (iceintel)
+		case 5:
+			print ("$5000 nikon camera with lots of zoom lens");
+			break;
+		case 4:
+			print ("deaddrop!");
+			break;
+		case 3:
+			print ("hand gun with silencer and sniper rifle ");
+			break;
+		case 2:
+			print ("fake passports");
+			break;
+		case 1:
+			print (" secret goverment intel");
+			break;
+		default:
+			print ("100k in cash in the hotel room.");
+			break;
+
 			{
-			case 5:
-				print (" hey there! Let me teach you thing or two!");
-				break;
-			case 4:
-				print ("deaddrop!");
-				break;
-			case 3:
-				print ("?");
-				break;
-			case 2:
-				print ("Grog SMASH!");
-				break;
-			case 1:
-				print ("Ulg, glib, Pblblblblb");
-				break;
-			default:
-				print ("Incorrect intelligence level.");
-				break;
+				Debug.Log("case 2"; + print);
 			}
 		}
-	}
-
-
-
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
