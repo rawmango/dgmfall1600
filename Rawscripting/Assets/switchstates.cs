@@ -28,10 +28,11 @@ public class switchstates : MonoBehaviour
 		default:
 			print ("100k in cash in the hotel room.");
 			break;
-
-			{
-				Debug.Log("case 2"; + print);
-			}
 		}
 	}
+	void Update ()
+	{
+		Debug.Log("case 2");
+	}
+
 }
