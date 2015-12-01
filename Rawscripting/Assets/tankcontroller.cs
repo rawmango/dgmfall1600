@@ -34,15 +34,15 @@ public class tankcontroller : MonoBehaviour {
 			// Cache the horizontal input.
 			float h = Input.GetAxis("Horizontal");
 			
-			if(h * rigidbody2D.velocity.x < maxSpeed) 			
+			if(h * GetComponent<Rigidbody2D>().velocity.x < maxSpeed) 			
 				//rigidbody2D.AddForce(Vector2.right * h * moveForce); 		 		
-			 if(Mathf.Abs(rigidbody2D.velocity.x) > maxSpeed)
-			rigidbody2D.velocity = new Vector2(Mathf.Sign(rigidbody2D.velocity.x) * maxSpeed, rigidbody2D.velocity.y);
+			 if(Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x) > maxSpeed)
+			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			
 		    // If the player should jump...
 			if(jump)
 			{	
-				rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+				GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
 				jump = false; 
 			}
 }

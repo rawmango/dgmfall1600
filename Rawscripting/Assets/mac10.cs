@@ -37,7 +37,7 @@ public class Mac10 : MonoBehaviour
 		//instantiate the bullet at the gun's muzzle  
 		instantiatedBullet = (GameObject)Instantiate(bullet, muzzleTransform.position, muzzleTransform.rotation * bulletRotation);  
 		//add velocity to the bullet  
-		instantiatedBullet.rigidbody.velocity =  muzzleTransform.TransformDirection(Vector3.forward * 75 );  
+		instantiatedBullet.GetComponent<Rigidbody>().velocity =  muzzleTransform.TransformDirection(Vector3.forward * 75 );  
 		//Stop this coroutine  
 		StopCoroutine("DelayedShot");  
 	}  
