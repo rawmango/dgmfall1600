@@ -3,17 +3,20 @@ using System.Collections;
 
 public class usingin : MonoBehaviour
 {
-	public Rigidbody rocketPrefab;
-	public Transform barrelEnd;
+	public Rigidbody Bullets;
+	public Transform Tower;
 	
 	
 	void Update ()
 	{
-		if(Input.GetButtonDown("Fire1"))
+		if(Input.GetKeyDown("b"))
 		{
-			Rigidbody rocketInstance;
-			rocketInstance = Instantiate(rocketPrefab, barrelEnd.position, barrelEnd.rotation) as Rigidbody;
-			rocketInstance.AddForce(barrelEnd.forward * 5000);
+			Rigidbody BulletsInstance;
+			BulletsInstance = Instantiate(Bullets, Tower.position, Tower.rotation) as Rigidbody;
+			BulletsInstance.AddForce(Tower.forward * 5000);
+				//{
+					//Destroy (gameObject, 10.5f);
+				//}
+			}
 		}
 	}
-}
