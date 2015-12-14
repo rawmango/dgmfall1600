@@ -10,10 +10,11 @@ public class usingin : MonoBehaviour
 	void Update ()
 	{
 		if(Input.GetKeyDown("b"))
+			//(Input.GetKeyDown(KeyCode.LeftShift)//
 		{
 			Rigidbody BulletsInstance;
 			BulletsInstance = Instantiate(Bullets, Tower.position, Tower.rotation) as Rigidbody;
-			BulletsInstance.AddForce(Tower.forward * 5000);
+			BulletsInstance.AddForce(Tower.forward * 7000);
 				//{
 					//Destroy (gameObject, 10.5f);
 				//}
