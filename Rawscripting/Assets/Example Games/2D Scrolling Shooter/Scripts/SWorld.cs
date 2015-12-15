@@ -16,7 +16,7 @@ public class SWorld : MonoBehaviour {
 	private bool  moveFast;
 	private float nothingBelowTime;
 	private float nothingBelowBuffer = 0.2f;
-	Array list = new Array();
+	//Arraylist = new Array();
 	
 	void  LateUpdate (){
 		horizontalSmooth = Mathf.Max(horizontalSmooth, 0);

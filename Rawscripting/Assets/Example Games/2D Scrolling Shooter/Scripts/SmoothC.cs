@@ -4,9 +4,7 @@ using System.Collections;
 public class SmoothC : MonoBehaviour {
 
 	bool  on = true;
-	
-	 gameScript;
-	
+
 	void  Update (){
 		if(Input.GetKeyDown(KeyCode.Tab)){
 			if(on){

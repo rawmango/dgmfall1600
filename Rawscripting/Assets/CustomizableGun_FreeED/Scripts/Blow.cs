@@ -6,7 +6,7 @@ public class Blow : MonoBehaviour {
 		// Instantiate explosion at the impact point and rotate the explosion
 		// so that the y-axis faces along the surface normal
 		ContactPoint contact = collision.contacts[0];
-	 rotation= Quaternion.FromToRotation(Vector3.up, contact.normal);
+	 Quaternion.FromToRotation(Vector3.up, contact.normal);
 		
 		if (collision.gameObject.tag =="Enemy"){
 			// And kill our selves
