@@ -17,7 +17,6 @@ public class SCam : MonoBehaviour {
 	
 	void  Start (){
 		cameraTilt = 0.0f;
-		vertialAim = 0.0f;
 		localPosition = transform.localPosition;
 		positionOffset = Vector3.zero;
 
