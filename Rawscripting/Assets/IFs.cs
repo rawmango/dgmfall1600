@@ -14,7 +14,7 @@ public class IFs : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			 HeatTest();
 		
-		gettingoverrun -= Time.deltaTime *5;
+		gettingoverrun -= Time.deltaTime *1;
 	    }
 
 		void HeatTest ()
@@ -29,13 +29,13 @@ public class IFs : MonoBehaviour
 		else if(gettingoverrun < winning)
 		{
 			// ... do this.
-			print("you have defeat the ememy and our winning");
+			print("you have defeat the ememy and are winning");
 		}
 		// If it is neither of those then...
 		else
 		{
 			// ... do this.
-			print("you can wear a t-shirt");
+			print("its was a Draw");
 		}
 	}
 }

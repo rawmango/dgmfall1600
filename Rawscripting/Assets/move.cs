@@ -12,7 +12,7 @@ public class move : MonoBehaviour {
 			moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 			moveDirection = transform.TransformDirection(moveDirection);
 			moveDirection *= speed;
-			if (Input.GetKey("b"))
+			if (Input.GetKey("m"))
 				moveDirection.y = jumpSpeed;
 			
 		}
