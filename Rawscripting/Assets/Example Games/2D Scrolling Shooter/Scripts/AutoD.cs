@@ -2,21 +2,14 @@
 using System.Collections;
 
 public class AutoD : MonoBehaviour {
-	float life;
-	private float destroyTime;
+		void OnTriggerEnter(Collider other) {
+			if (other.CompareTag("soldier"))
+				Destroy(other.gameObject);
+		float delay= 20.0f; }
+}//This implies a delay of 2 seconds.
 	
-	void  Start (){
-		destroyTime = Time.time + life;
-	}
+	//  WaitAndDestroy (){
+	//	yield return new WaitForSeconds(delay);
+	//	Destroy (gameObject);
 	
-	void  Update (){
-		if(Time.time > destroyTime){
-			Destroy(gameObject);
-		}
-		if(Time.time > destroyTime - particleEmitter.maxEnergy){
-			particleEmitter.emit = false;
-		}
-		
-	}
-
-}
+//}

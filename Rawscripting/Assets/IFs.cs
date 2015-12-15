@@ -4,9 +4,9 @@ using System.Collections;
 public class IFs : MonoBehaviour
 {
 		
-	public float yougetburned = 100.0f;
-	public float tshirt = 85.0f;
-	public float wintercoat = 40.0f;
+	public float gettingoverrun = 100.0f;
+	public float draw = 85.0f;
+	public float winning = 40.0f;
 
 
 	void Update ()
@@ -14,22 +14,22 @@ public class IFs : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.Space))
 			 HeatTest();
 		
-		yougetburned -= Time.deltaTime *5;
+		gettingoverrun -= Time.deltaTime *5;
 	    }
 
 		void HeatTest ()
 	{
 		// If the temperature is greater than the hottest temperature...
-		if(yougetburned > tshirt)
+		if(gettingoverrun> draw)
 		{
 			// ... do this.
-			print("it's too hot outside, you will get burned.");
+			print("Getting Overrun by Ememy Soldiers.");
 		}
 		// If it isn't, but the temperature is less than the coldest temperature...
-		else if(yougetburned < wintercoat)
+		else if(gettingoverrun < winning)
 		{
 			// ... do this.
-			print("you need a winter coat");
+			print("you have defeat the ememy and our winning");
 		}
 		// If it is neither of those then...
 		else

@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class Blow : MonoBehaviour {
-	function OnCollisionEnter (collision : Collision) {
+	void  OnCollisionEnter ( Collision collision  ){
 		// Instantiate explosion at the impact point and rotate the explosion
 		// so that the y-axis faces along the surface normal
-		var contact : ContactPoint = collision.contacts[0];
-		var rotation = Quaternion.FromToRotation(Vector3.up, contact.normal);
+		ContactPoint contact = collision.contacts[0];
+	 Quaternion.FromToRotation(Vector3.up, contact.normal);
 		
 		if (collision.gameObject.tag =="Enemy"){
 			// And kill our selves
@@ -14,12 +14,11 @@ public class Blow : MonoBehaviour {
 		}
 	}
 	
-	function Kill () {
+	void  Kill (){
 		
 		
 		// Destroy the projectile
 		Destroy(gameObject);
 	}
+}
 	
-	
-	script RequireComponent (Rigidbody)
