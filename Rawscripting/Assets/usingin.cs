@@ -4,20 +4,30 @@ using System.Collections;
 public class usingin : MonoBehaviour
 {
 	public Rigidbody Bullets;
-	public Transform Tower;
+	public Transform BEnd;
 	
 	
 	void Update ()
 	{
-		if(Input.GetKeyDown("b"))
+		if(Input.GetButtonDown("Jump"))
 			//(Input.GetKeyDown(KeyCode.LeftShift)//
 		{
 			Rigidbody BulletsInstance;
-			BulletsInstance = Instantiate(Bullets, Tower.position, Tower.rotation) as Rigidbody;
-			BulletsInstance.AddForce(Tower.forward * 7000);
-				//{
-					//Destroy (gameObject, 10.5f);
+			BulletsInstance = Instantiate(Bullets, BEnd.position, BEnd.rotation) as Rigidbody;
+			BulletsInstance.AddForce(BEnd.right * 1000);
+			//InstanceBullets= Instantiate(Bullets, transform.position, shootPosition.rotation);
+			//instanceBullet.rigidbody.AddForce(shootPosition.right * shootForce);
+			
+		}
+
+			
+		}
+		//{
+		//Destroy (gameObject, 10.5f);
 				//}
 			}
-		}
-	}
+		
+	
+
+
+
